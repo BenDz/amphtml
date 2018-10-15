@@ -179,7 +179,7 @@ export const ANALYTICS_CONFIG = /** @type {!JsonObject} */ ({
     'transport': {'beacon': false, 'xhrpost': false, 'image': true},
     'requests': {
       'base': 'https://${log}${domain}/hit.xiti?s=${site}&ts=${timestamp}&r=${screenWidth}x${screenHeight}x${screenColorDepth}&re=${availableScreenWidth}x${availableScreenHeight}',
-      'suffix': '&medium=amp&${extraUrlParams}&ref=${documentReferrer}',
+      'suffix': '&medium=amp&idclient=${clientId(_atidc)}&${extraUrlParams}&ref=${documentReferrer}',
       'pageview': '${base}&' +
         'p=${title}&' +
         's2=${level2}${suffix}',
